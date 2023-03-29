@@ -1,0 +1,8 @@
+{
+  "name": "storybook-composition",
+  "version": "1.0.0",
+  "description": "Storybook Composition usign Yarn Workspaces for multiple frameworks",
+  "main": "index.js",
+  "author": "wanderlima <wander@wanderlima.com>",
+  "license": "MIT"
+}
