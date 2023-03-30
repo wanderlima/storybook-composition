@@ -1,8 +1,23 @@
 {
   "name": "storybook-composition",
-  "version": "1.0.0",
+  "version": "1.0.00",
   "description": "Storybook Composition usign Yarn Workspaces for multiple frameworks",
   "main": "index.js",
-  "author": "wanderlima <wander@wanderlima.com>",
-  "license": "MIT"
+  "private": true,
+  "author": {
+    "name": "Wander Lima",
+    "email": "hi@wanderlima.com",
+    "url": "https://wanderlima.com"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "storybook": "concurrently --kill-others --group \"yarn sb:react --no-open --quiet\" \"yarn sb:twig --no-open --quiet\" \"yarn sb:global --quiet\"",
+    "sb:global": "yarn workspace @storybook-composition/sb-global storybook",
+    "sb:react": "yarn workspace @storybook-composition/sb-react storybook",
+    "sb:twig": "yarn workspace @storybook-composition/sb-twig storybook",
+    "clear": "rm -rf packages/*/node_modules/.cache"
+  }
 }

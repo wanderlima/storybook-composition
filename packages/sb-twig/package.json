@@ -1,0 +1,32 @@
+{
+  "name": "@storybook-composition/sb-twig",
+  "version": "1.0.00",
+  "private": true,
+  "author": {
+    "name": "Wander Lima",
+    "email": "hi@wanderlima.com",
+    "url": "https://wanderlima.com"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6008",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack4": "^6.5.16",
+    "@storybook/html": "^6.5.16",
+    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.3.0",
+    "twig": "^1.16.0",
+    "twigjs-loader": "^1.0.3"
+  }
+}
