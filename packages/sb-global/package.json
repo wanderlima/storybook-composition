@@ -8,22 +8,25 @@
     "url": "https://wanderlima.com"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  },
-  "dependencies": {
-    "concurrently": "^8.0.1"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-interactions": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/builder-webpack4": "^6.5.16",
-    "@storybook/html": "^6.5.16",
-    "@storybook/manager-webpack4": "^6.5.16",
-    "@storybook/testing-library": "^0.0.13",
-    "babel-loader": "^8.3.0"
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.0",
+    "@storybook/addon-actions": "^7.0.0-rc.10",
+    "@storybook/addon-essentials": "^7.0.0-rc.10",
+    "@storybook/addon-interactions": "^7.0.0-rc.10",
+    "@storybook/addon-links": "^7.0.0-rc.10",
+    "@storybook/addon-mdx-gfm": "^7.0.0-rc.10",
+    "@storybook/html": "^7.0.0-rc.10",
+    "@storybook/html-webpack5": "^7.0.0-rc.10",
+    "@storybook/testing-library": "^0.0.14-next.1",
+    "babel-loader": "^8.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.0-rc.10"
   }
 }
